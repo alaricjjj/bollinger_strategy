@@ -24,10 +24,17 @@ class Bolinger(bt.Strategy):
         self.datavolume = self.datas[0].volume
 
 
+
+
+
+
+
         # Parameters
         self.period_long = period_long #ma140根k线
         self.dev_long = dev_long #高位标准差倍数
         self.dev_short = dev_short #地位标准差倍数
+
+
         self.back_stop_percentage_long = back_stop_long #固定止损
         self.trail_stop_percentage_long = trail_stop_long #移动止损
 
