@@ -15,12 +15,14 @@ class Bolinger(bt.Strategy):
         time = self.datas[0].datetime.time(0)
         print('%s, %s ,%s' % (dt.isoformat(), time, txt))
 
+
     def __init__(self, period_long=200, dev_long = 2, dev_short = 2, back_stop_long = 1.02 ,trail_stop_long =0.1):
         # Dataseries
         self.dataclose = self.datas[0].close
         self.datahigh = self.datas[0].high
         self.dataopen = self.datas[0].open
         self.datavolume = self.datas[0].volume
+
 
         # Parameters
         self.period_long = period_long #ma140根k线
